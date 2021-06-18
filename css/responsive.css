@@ -1,0 +1,75 @@
+ @media only screen and (max-width: 1025px) {
+    /* Main Header Area */
+    .inner_header {padding: 20px 0 0;}
+ }
+ @media only screen and (max-width: 980px) {
+    /* Hero Area */
+    .inner_hero h1 {font-size: 70px;}
+ }
+  @media only screen and (max-width: 882px) {
+    /* Hero Area */
+    .inner_hero h1 {padding-top: 0;font-size: 55px;}
+ }
+ @media only screen and (max-width: 750px) {
+    /* Hero Area */
+    .inner_hero h1 {font-size: 50px;}
+    /* Footer Area */
+    .footer_child {width: 45%;margin-right: 5%;margin-bottom: 40px;}
+    .footer_child:nth-child(2) {margin-right: 0;margin-left: 5%;}
+    .footer_child:last-child {margin-right: 0;margin-left: 5%;}
+  }
+ @media only screen and (max-width: 650px) {
+    /* Hero Area */
+    .inner_hero img {float: none;}
+    .inner_hero a {margin-bottom: 10px;}
+    /* Mini Menu */
+    .mini_menu {width: auto;}
+    .search_area {width: auto;}
+    /* Work Area */
+    .work_child {width: 100%;}
+    .work_child h2 {margin-bottom: 20px;}
+    .service_area {margin: 30px 0;}
+ }
+@media only screen and (max-width: 550px) {
+    /* Footer Area */
+    .footer_child {width: 100%;}
+    .footer_child:nth-child(2) {margin-left: 0;}
+    .footer_child:last-child {margin-left: 0;}
+    /* Copyright Area */
+    .left_copyright {width: 100%;margin-bottom: 15px;}
+    .right_copyright {width: 100%;text-align: left;}
+}
+@media only screen and (max-width: 530px) {
+    /* Mini Menu */
+    .mini_menu {width: 100%;margin-bottom: 10px;}   
+    .mini_menu ul {text-align: center;}
+    .mini_menu ul li:last-child {margin-right: 0;}
+    .search_area {float: none;width: 200px;margin: 0 auto;}
+    /* Logo and Social Area */
+    .logo_area {float: none;width: 100%;margin: 0 auto; text-align: center;}
+    .social_area {width: 100%}
+    .social_area ul {float: none;text-align: center;}
+    .social_area ul li {margin: 0 10px;}
+} 
+@media only screen and (max-width: 400px) {
+    /* Box Slider Area */
+    .slider_caption {font-size: 25px;}
+}
+@media only screen and (max-width: 330px) {
+    /* Mnin Menu */
+    .mini_menu ul li {margin: 0 2px;}
+    .mini_menu ul li::after {right: -4.5px;}
+}
+@media only screen and (max-width: 310px) {
+    /* Hero Area */
+    .inner_hero h1 {font-size: 35px;}
+    /* Social Area */
+    .social_area ul li {margin: 0 5px;}
+    .social_area ul li:first-child {margin-left: 0}
+    .social_area ul li:last-child {margin-left: 0}
+}
+@media only screen and (max-width: 279px) {
+    /* Mnin Menu */
+    .mini_menu ul li {margin: 0 1.5px;}
+    .mini_menu ul li::after {right: -4px;}
+}

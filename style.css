@@ -1,0 +1,699 @@
+/*--------------- Common CSS start here --------------- 
+=====================================================*/
+body {
+	color: #666666;
+	font-family: Georgia, sans-serif;
+	font-size: 16px;
+	line-height: 1.5rem;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 96%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* .alignleft {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.alignright {
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+.aligncenter {
+	display: block;
+	margin: 0 auto 15px;
+}
+*/
+/*--------------- Common CSS end here --------------- 
+=====================================================*/
+
+
+/*------------- Top header CSS start here ----------- 
+=====================================================*/
+.header_area {
+	width: 100%;
+	clear: both;
+}
+
+#top_header_area {
+	background: #ba2e1f;
+	padding: 15px 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.mini_menu {
+	float: left;
+	width: 60%;
+}
+
+.mini_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+
+.mini_menu ul li {
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+}
+
+.mini_menu ul li::after {
+	background: #ffffff;
+	content: "";
+	position: absolute;
+	width: 1.5px;
+	height: 10px;
+	top: 7px;
+	right: -12px;
+}
+
+.mini_menu ul li:last-child::after {
+	display: none;
+}
+
+.mini_menu ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.mini_menu ul li a:hover {
+	color: #ddd;
+}
+
+.search_area {
+	float: right;
+	width: 40%;
+	overflow: hidden;
+}
+
+.search_area form {
+	background: #ffffff;
+	border-radius: 19px;
+	float: right;
+	padding: 0 2%;
+	max-width: 210px;
+	width: 96%;
+	height: 25px;
+}
+
+.search_area form input {
+	border: none;
+	outline: none;
+	width: 75%;
+	padding: 1%;
+	float: left;
+	height: 23px;
+	border-radius: 20px;
+	color: #000;
+}
+
+.search_area form input[type="submit"] {
+	background: url(img/search.png);
+	background-repeat: no-repeat;
+	border-radius: 0;
+	width: 18px;
+	float: right;
+	margin-top: 3.5px;
+	cursor: pointer;
+}
+
+.search_area form input[type="submit"]:hover {
+	background: url(img/searchHover.png);
+	background-repeat: no-repeat;
+}
+/*------------- Top header CSS end here ----------- 
+=====================================================*/
+
+
+/*------------- Logo and Social Area CSS start here ----------- 
+=====================================================*/
+#main_header_area {
+	width: 100%;
+	clear: both;
+}
+
+.inner_header {
+	padding: 40px 0;
+	overflow: hidden;
+}
+
+.logo_area {
+	max-width: 240px;
+	float: left;
+}
+
+.social_area {
+	float: right;
+	max-width: 600px;
+	padding-top: 5px;
+}
+
+.social_area ul {
+	list-style: none;
+	float: right;
+}
+
+.social_area ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.social_area ul li a {
+	text-decoration: none;
+	display: block;
+}
+
+.social_area ul li a i {
+	background: #363636;
+	width: 33px;
+	height: 33px;
+	color: #fff;
+	text-align: center;
+	padding-top: 8.5px;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.social_area ul li a:hover .fa-linkedin-in {
+	background: #006ec0;
+}
+
+.social_area ul li a:hover .fa-twitter {
+	background: #20b9f2;
+}
+
+.social_area ul li a:hover .fa-pinterest {
+	background: #bb0d13;
+}
+
+.social_area ul li a:hover .fa-google-plus-g {
+	background: #d54836;
+}
+
+.social_area ul li a:hover .fa-rss {
+	background: #fd851e;
+}
+/*------------- Logo and Social Area CSS end here ----------- 
+=====================================================*/
+
+
+/*------------- Main menu CSS start here ----------- 
+=====================================================*/
+.inner_menu {
+	background: #333333;
+	max-width: 960px;
+	border-radius: 5px;
+	min-height: 54.5px;
+	position: relative;
+	padding: 15px 0;
+	z-index: 1;
+}
+
+.inner_menu::after {
+	position: absolute;
+	background: #2b2b2b;
+	width: 100%;
+	height: 50%;
+	bottom: 0;
+	left: 0;
+	content: "";
+	z-index: -1;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.inner_menu ul {
+	list-style: none;
+	text-align: center;
+}
+
+.inner_menu ul li {
+	display: inline-block;
+	margin: 0px 5px;
+	font-size: 14px;
+	position: relative;
+}
+.inner_menu ul li:hover i {
+	transform: rotate(90deg);
+	transition: .3s;
+}
+
+.inner_menu ul li:hover ul i {
+	transform: none;
+}
+
+.inner_menu ul ul li:hover i {
+	transform: rotate(90deg);
+	transition: .3s;
+}
+
+.inner_menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+.inner_menu ul li:hover a {
+	color: #d54836;
+	transition: .3s;
+}
+
+.inner_menu ul li:hover ul li a {
+	color: #fff;
+}
+
+
+/* ----------Dropdown Style---------- */
+.inner_menu ul ul {
+	position: absolute;
+	background: #ba2e1f;
+	width: 150px;
+	top: 24px;
+	padding: 10px 0;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	left: -999999px;
+}
+
+.inner_menu ul li:hover ul {
+	left: 0;
+}
+
+.inner_menu ul ul li {
+	border-bottom: 0.01px solid #c04545;
+	margin: 0;
+	display: block;
+}
+
+.inner_menu ul ul li:last-child {
+	border: none;
+}
+
+.inner_menu ul ul li:hover {
+	background: #333;
+	border-top-right-radius: 200px;
+	border-bottom-left-radius: 200px;
+}
+
+.inner_menu ul ul li:nth-child(3) {
+	padding-left: 10px;
+}
+
+.inner_menu ul ul ul {
+	left: 150px;
+	top: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+.inner_menu ul li:hover ul ul {
+	left: -999999px;
+}
+
+.inner_menu ul ul li:hover ul {
+	left: 150px;
+}
+
+.inner_menu ul ul ul li:nth-child(3) {
+	padding-left: 0;
+}
+/*------------- Main menu CSS end here ----------- 
+=====================================================*/
+
+
+/*------------- Bxslider CSS start here ----------- 
+=====================================================*/
+#slider_area {
+	margin-top: 20px;
+	position: relative;
+	width: 100%;
+	background: #f2f2f2;
+}
+
+.slider_caption {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 30px;
+	font-family: "Courier New", Courier, monospace;
+	line-height: 1.5em;
+}
+/*------------- Bxslider CSS end here ----------- 
+=====================================================*/
+
+
+/*------------- Hero Area CSS start here ----------- 
+=====================================================*/
+#hero_area {
+	overflow: hidden;
+}
+
+.inner_hero img {
+	float: left;
+	margin-right: 30px;
+}
+
+.inner_hero h1 {
+	font-size: 86px;
+	line-height: 1.2em;
+	color: #000000;
+	font-weight: normal;
+	padding-top: 100px;
+}
+
+.inner_hero p {
+	color: #888;
+}
+
+.inner_hero a {
+	text-decoration: none;
+	color: #ba2e1f;
+	text-transform: uppercase;
+	float: right;
+}
+
+.inner_hero a:hover {
+	text-decoration: none;
+	color: #000;
+	font-size: 16.3px;
+}
+/*------------- Hero Area CSS end here ----------- 
+=====================================================*/
+
+
+/*------------- Work Area CSS start here ----------- 
+=====================================================*/
+#work_area {
+	background: #f2f2f2;
+	overflow: hidden;
+	padding: 40px 0 20px;
+}
+
+.work_child {
+	width: 31%;
+	float: left;
+}
+
+.work_child h2 {
+	font-size: 26px;
+	color: #333333;
+	font-weight: normal;
+	margin-bottom: 50px;
+}
+
+.work_child p {
+	font-size: 14px;
+	color: #878787;
+}
+
+.work_child a {
+	text-transform: capitalize;
+	font-size: 14px;
+	color: #b92d1f;
+	float: right;
+	text-decoration: none;
+}
+
+.work_child a:hover {
+	font-size: 14.3px;
+	color: #000;
+}
+
+.service_area {
+	margin: 0px 3.5%;
+}
+
+/* About Area CSS */
+.about_area img {
+	border: 1px solid #dfdfdf;
+	padding: 4px;
+}
+
+.about_area p {
+	margin-bottom: 15px;
+}
+
+/* Service Area CSS */
+.service_image {
+	width: 25%;
+	float: left;
+}
+
+.service_des {
+	width: 75%;
+	float: right;
+}
+
+.service_des h3 {
+	font-size: 16px;
+	color: #878787;
+	font-weight: normal;
+}
+
+.service_child {
+	overflow: hidden;
+	margin-bottom: 28px;
+}
+
+
+/* clients Area Css */
+
+.testimonial_child {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.testimonial_area img {
+	float: left;
+}
+
+.testimonial_area h3 {
+	font-size: 17px;
+	color: #989898;
+	margin: 11px 0;
+}
+
+.testimonial_area h3 span {
+	font-weight: normal;
+}
+
+.testimonial_area a {
+	margin-top: 14px;
+}
+/*------------- Work Area CSS end here ----------- 
+=====================================================*/
+
+
+/*------------- Footer Area CSS start here ----------- 
+=====================================================*/ 
+#footer_area {
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.footer_child {
+	width: 22.75%;
+	float: left;
+	margin-right: 3%;
+}
+
+.footer_child:last-child {
+	float: right;
+	margin: 0;
+}
+
+.footer_child h4 {
+	font-size: 17px;
+	color: #666666;
+	font-weight: normal;
+	border-top: 1px solid #666666;
+	padding-top: 15px;
+	margin-bottom: 30px;
+}
+
+.footer_child p {
+	font-size: 14px;
+	color: #666666;
+	font-weight: normal;
+}
+
+
+/* Tweets Area CSS */
+.tweests_area span {
+	color: #b92d1f;
+}
+
+.tweests_area p {
+	margin-bottom: 30px;
+}
+
+
+/* Quick Links Area CSS */
+.quick_links_area {
+	overflow: hidden;
+}
+
+.quick_links_area ul {
+	list-style: none;
+}
+
+.quick_links_area li {
+	display: block;
+	border-bottom: 1px solid #d4d4d4;
+	line-height: 1.6rem;
+}
+
+.quick_links_area a {
+	text-decoration: none;
+	color: #666666;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+/* Blog Post Area CSS */
+.blog_post_child {
+	overflow: hidden;
+}
+
+.blog_post_child h5 {
+	display: inline-block;
+}
+
+.blog_post_child h5 a {
+	font-size: 16px;
+	color: #666666;
+}
+
+.blog_post_child h6 {
+	font-size: 12px;
+	color: #666666;
+	font-weight: normal;
+	line-height: 12px;
+	margin-bottom: 10px;
+}
+
+.blog_post_child span {
+	color: #b82c1f;
+}
+
+.blog_post_child h5 a:hover {
+	font-size: 16px;
+	color: #b92d1f;
+}
+
+.blog_post_child span {
+	font-size: 12px;
+	line-height: 0px;
+}
+
+.blog_post_child p {
+	margin-bottom: 15px;
+	line-height: 16px;
+}
+
+.blog_post_child a {
+	text-transform: capitalize;
+	font-size: 14px;
+	color: #b92d1f;
+	float: right;
+	text-decoration: none;
+}
+
+.blog_post_child a:hover {
+	font-size: 14.3px;
+	color: #000;
+}
+
+
+/* Contact Area CSS */
+.contact_area form {
+	width: 100%;
+}
+
+.contact_area form input {
+	width: 100%;
+	background: #f2f2f2;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 10px;
+	font-family: Georgia;
+	outline: none;
+}
+
+.contact_area form input[type="submit"] {
+	width: 80px;
+	color: #ba2e1f;
+	cursor: pointer;
+}
+
+.contact_area form input[type="submit"]:hover {
+	color: #f2f2f2;
+	background: #ba2e1f;
+}
+
+.contact_area textarea {
+	resize: none;
+	width: 100%;
+	background: #f2f2f2;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+}
+/*------------- Footer Area CSS end here ----------- 
+=====================================================*/ 
+
+
+/*------------- Copyright Area CSS start here ----------- 
+=====================================================*/ 
+#copyright_area {
+	background: #f2f2f2;
+	padding: 20px 0;
+}
+
+.inner_copyright {
+	overflow: hidden;
+}
+
+.inner_copyright p {
+	font-size: 14px;
+	color: #999999;
+}
+
+.left_copyright {
+	float: left;
+	width: 65%;
+}
+
+.right_copyright {
+	float: right;
+	width: 35%;
+	text-align: right;
+}
+/*------------- Copyright Area CSS end here ----------- 
+=====================================================*/
